@@ -1,0 +1,354 @@
+@charset "UTF-8";
+/* CSS Document */
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri&display=swap');
+
+@keyframes growSmall {
+	0% {
+		transform: scale(1);
+	}
+	
+	50% {
+		transform: scale(1.7);
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes growMedium {
+	0% {
+		transform: scale(1);
+	}
+	
+	50% {
+		transform: scale(1.3);
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+}
+
+@keyframes growLarge {
+	0% {
+		transform: scale(1);
+	}
+	
+	50% {
+		transform: scale(1.15);
+	}
+	
+	100% {
+		transform: scale(1);
+	}
+}
+
+body {
+	left: 0px; 
+	right: 0px; 
+	top: 0px; 
+	bottom: 0px;
+	font-family: 'Hind Siliguri', sans-serif;
+	color: #303437;
+	background-color: #f5f5f5;
+}
+
+h1 {
+	padding-left: 20px;
+	font-size: 50pt;
+	margin: 0;
+	transform: scale(1);
+	transition-duration: 3.5s;
+}
+
+h1:hover {
+	transform: scale(1.025);
+	transition-duration: 3.5s;
+}
+
+h1 a {
+	text-decoration: none;
+	color: #303437;
+}
+
+nav {
+	width: 100%;
+	padding-left: 20px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+}
+
+ul li {
+	list-style: none;
+	display: inline-block;
+	float: left;
+	font-size: 14pt;
+	transform: scale(1);
+	transition-duration: 2.5s;
+}
+
+ul li:hover {
+	transform: scale(1.15);
+	transition-duration: 2.5s;
+}
+
+ul li a {
+	text-decoration: none;
+	padding: 0 20px;
+	color: #303437;
+}
+
+#ques {
+	padding-right: 30px;
+}
+
+#titleDiv {
+	padding-bottom: 100px;
+}
+
+#audioDiv {
+	position: fixed;
+	bottom: 10px;
+	left: 10px;
+}
+
+#pausePlay {
+	width: 25px;
+	height: 25px;
+}
+
+#musicButton {
+	transform: scale(1);
+	transition-duration: 3s;	
+}
+
+#musicButton:hover {
+	transform: scale(1.2);
+	transition-duration: 3s;
+}
+
+canvas {
+	border-radius: 100%;
+}
+
+.small {
+	animation: 11s linear 2s infinite growSmall;
+}
+
+.medium {
+	animation: 12s linear 3s infinite growMedium;
+}
+
+.large {
+	animation: 15s linear 1s infinite growLarge;
+}
+
+#bubbleWrap {
+/*
+	border-color: black;
+	border-style: dotted;
+*/
+	margin: auto;
+	height: 400px;
+	width: 1200px;
+	position: relative;
+	margin-top: 30px;
+}
+
+/* BUBBLE SIZING + POSITIONING */
+#canv1 {
+	position: absolute;
+	width: 186px;
+	height: 186px;
+	top: 18px;
+	left: 185px;
+}
+
+#canv2 {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	bottom: 105px;
+  	left: 90px;
+}
+
+#canv3 {
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	bottom: 108px;
+  	left: 338px;
+}
+
+#canv4 {
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	bottom: 159px;
+	left: 457px;
+}
+
+#canv5 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 112px;
+  	left: 390px;
+}
+
+#canv6 {
+	position: absolute;
+	width: 57px;
+	height: 57px;
+	bottom: 110px;
+  	left: 253px;
+}
+
+#canv7 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	top: 96px;
+	left: 110px;
+}
+
+#canv8 {
+	position: absolute;
+	width: 78px;
+	height: 78px;
+	top: 135px;
+	left: 18px;
+}
+
+#canv9 {
+	position: absolute;
+	width: 70px;
+	height: 70px;
+	top: 86px;
+  	left: 580px;
+}
+
+#canv10 {
+	position: absolute;
+	width: 130px;
+	height: 130px;
+	top: 24px;
+	left: 672px;
+}
+
+#canv11 {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	top: 96px;
+  	right: 330px;
+}
+
+#canv12 {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 136px;
+	bottom: 65px;
+  	right: 365px;
+}
+
+#canv13 {
+	position: absolute;
+	width: 40px;
+	height: 40px;
+	top: 146px;
+	left: 655px;
+}
+
+#canv14 {
+	position: absolute;
+	width: 10px;
+	height: 10px;
+	top: 109px;
+  	right: 377px;
+}
+
+#canv15 {
+	position: absolute;
+	width: 15px;
+	height: 15px;
+	top: 58px;
+	left: 642px;
+}
+
+#canv16 {
+	position: absolute;
+	width: 150px;
+	height: 150px;
+	bottom: 17px;
+  	right: 244px;
+}
+
+#canv17 {
+	position: absolute;
+	width: 95px;
+	height: 95px;
+	bottom: 137px;
+  	right: 160px;
+}
+
+#canv18 {
+	position: absolute;
+	width: 35px;
+	height: 35px;
+	bottom: 90px;
+  	right: 410px;
+}
+
+#canv19 {
+	position: absolute;
+	width: 88px;
+	height: 88px;
+	bottom: 20px;
+	right: 112px;
+}
+
+#canv20 {
+	position: absolute;
+	width: 65px;
+	height: 65px;
+	bottom: 70px;
+  	right: 36px;
+}
+
+#canv21 {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	bottom: 22px;
+  	right: 210px;
+}
+
+#canv22 {
+	position: absolute;
+	width: 20px;
+	height: 20px;
+	bottom: 101px;
+  	right: 202px;
+}
+
+#canv23 {
+	position: absolute;
+	width: 30px;
+	height: 30px;
+	bottom: 185px;
+	right: 275px;
+}
+
+#canv24 {
+	position: absolute;
+	width: 50px;
+	height: 50px;
+	bottom: 123px;
+	right: 106px;
+}
